@@ -1,0 +1,86 @@
+{
+  "private": true,
+  "name": "preact-kitui",
+  "version": "0.0.0",
+  "license": "MIT",
+  "module": "dist/index.js",
+  "main": "dist",
+  "scripts": {
+    "clean": "rimraf dist example",
+    "build:example": "preact build --dest example",
+    "build:component": "tsc --build tsconfig.build.json",
+    "build:less": "lessc packages/style.less dist/style.css --source-map",
+    "copy:less": "node bin/lessc.js",
+    "build": "npm run clean && npm run build:example && npm run build:component && npm run build:less && npm run copy:less",
+    "serve": "sirv build --port 8080 --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "test": "jest ./tests"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,md,scss}": "prettier --write",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "eslintIgnore": [
+    "example/*",
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloLaoYang/preact-kitui.git"
+  },
+  "keywords": [
+    "preact",
+    "preact components"
+  ],
+  "author": {
+    "name": "helloLaoYang",
+    "email": "aaron@codonas.cn"
+  },
+  "homepage": "",
+  "dependencies": {},
+  "peerDependencies": {
+    "preact": "*"
+  },
+  "devDependencies": {
+    "@teamsupercell/typings-for-css-modules-loader": "^2.2.0",
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^26.0.8",
+    "@types/node": "^14.10.1",
+    "@types/webpack-env": "^1.15.1",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "copy": "^0.3.2",
+    "css-loader": "^3.5.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-preact-pure": "^2.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "glob": "^7.1.6",
+    "husky": "^4.2.1",
+    "jest": "^26.2.2",
+    "jest-preset-preact": "^4.0.2",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "lint-staged": "^10.0.7",
+    "preact": "^10.4.8",
+    "preact-cli": "^3.0.0",
+    "preact-jsx-chai": "^2.3.2",
+    "preact-markup": "^1.6.0",
+    "preact-render-to-string": "^5.1.10",
+    "preact-router": "^3.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.26.11",
+    "sirv-cli": "^1.0.0-next.3",
+    "typescript": "^4.0.2"
+  }
+}

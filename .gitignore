@@ -1,0 +1,5 @@
+node_modules
+size-plugin.json
+/dist
+/example
+/*.log
