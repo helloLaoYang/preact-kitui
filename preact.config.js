@@ -5,7 +5,6 @@ const resolve = (file) => path.resolve(__dirname, file)
 const eslintLoader = {
   test: /\.(t|j)s(x)*$/,
   enforce: 'pre',
-  include: path.resolve(__dirname, 'src'),
   loader: 'eslint-loader',
 }
 
