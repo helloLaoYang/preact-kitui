@@ -3,13 +3,12 @@
   "name": "preact-kitui",
   "version": "0.0.0",
   "license": "MIT",
-  "module": "dist/index.js",
-  "main": "dist",
+  "main": "components/index.js",
   "scripts": {
-    "clean": "rimraf dist example",
+    "clean": "rimraf example components",
     "build:example": "preact build --dest example",
     "build:component": "tsc --build tsconfig.build.json",
-    "build:less": "lessc packages/style.less dist/style.css --source-map",
+    "build:less": "lessc packages/style.less components/style.css --source-map",
     "copy:less": "node bin/lessc.js",
     "build": "npm run clean && npm run build:example && npm run build:component && npm run build:less && npm run copy:less",
     "serve": "sirv build --port 8080 --cors --single",
@@ -23,7 +22,7 @@
   },
   "eslintIgnore": [
     "example/*",
-    "dist/*"
+    "components/*"
   ],
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
 
-import './Button.css'
+import './index.css'
 
 export { default } from './Button'

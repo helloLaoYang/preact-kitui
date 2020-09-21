@@ -1,5 +1,5 @@
 node_modules
 size-plugin.json
-/dist
+/components
 /example
 /*.log

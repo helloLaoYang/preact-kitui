@@ -1,7 +1,18 @@
-import { h, FunctionalComponent } from 'preact'
+import { h, Component, JSX } from 'preact'
 
-const ButtonComponent: FunctionalComponent = () => (
-  <div className="button-component"></div>
-)
+class KitComponentButton extends Component<{
+  block?: boolean;
+}> {
+  render(): JSX.Element {
+    const {
+      block,
+    } = this.props
+    return (
+      <div className="kit-component-button"
+        data-block={ block }
+      ></div>
+    )
+  }
+}
 
-export default ButtonComponent
+export default KitComponentButton

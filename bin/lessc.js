@@ -7,24 +7,13 @@ const { exec } = require('child_process')
 
 const resolve = (file) => path.resolve(__dirname, '..', file)
 
-const packagesPath = resolve('packages')
-const distPath = resolve('dist')
+const __packages_dir = resolve('packages')
+const __components_dir = resolve('components')
 
-const components = fs.readdirSync(packagesPath)
+const components = fs.readdirSync(__packages_dir)
 
-components.forEach((lessfile) => {
-  const shell = `lessc -x --source-map ${
-    packagesPath
-  }/${
-    lessfile
-  }/${
-    lessfile
-  }.less ${
-    distPath
-  }/${
-    lessfile
-  }/${
-    lessfile
-  }.css`
-  exec(shell)
+components.forEach((componentName) => {
+  exec(
+    `lessc -x --source-map ${__packages_dir}/${componentName}/index.less ${__components_dir}/${componentName}/index.css`
+  )
 })
