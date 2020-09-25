@@ -1,0 +1,37 @@
+{
+  "id": "2083159",
+  "name": "preact-kitui",
+  "font_family": "kitui-icon",
+  "css_prefix_text": "ic",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11349318",
+      "name": "right",
+      "font_class": "right",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "260513",
+      "name": "install",
+      "font_class": "install",
+      "unicode": "e961",
+      "unicode_decimal": 59745
+    },
+    {
+      "icon_id": "586812",
+      "name": "component",
+      "font_class": "component",
+      "unicode": "e6de",
+      "unicode_decimal": 59102
+    },
+    {
+      "icon_id": "4352728",
+      "name": "message",
+      "font_class": "message",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    }
+  ]
+}

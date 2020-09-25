@@ -8600,6 +8600,18 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.27, postcss@^7.0.3
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+preact-async-route@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/preact-async-route/download/preact-async-route-2.2.1.tgz#729f8f8650281973251fbbf852d5004f32f48594"
+  integrity sha1-cp+PhlAoGXMlH7v4UtUATzL0hZQ=
+
+preact-async-router@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/preact-async-router/download/preact-async-router-1.0.2.tgz#470ba8c267b37c0f943bb81b5874cbe930cfcc55"
+  integrity sha1-RwuowmezfA+UO7gbWHTL6TDPzFU=
+  dependencies:
+    preact-router "^2.6.0"
+
 preact-cli@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/preact-cli/download/preact-cli-3.0.0.tgz#a88abee99c89aac459849f2a9600fb4ac0d834f5"
@@ -8708,6 +8720,11 @@ preact-render-to-string@^5.1.10:
   integrity sha1-zOA9c7FmxVAUivne3J4G/faCD4o=
   dependencies:
     pretty-format "^3.8.0"
+
+preact-router@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.npm.taobao.org/preact-router/download/preact-router-2.6.1.tgz#eec60a9f2c07a1ae4fbc6604d8a0415742fbbd89"
+  integrity sha1-7sYKnywHoa5PvGYE2KBBV0L7vYk=
 
 preact-router@^3.2.1:
   version "3.2.1"
@@ -9447,13 +9464,6 @@ rollup@^1.31.1:
     "@types/estree" "*"
     "@types/node" "*"
     acorn "^7.1.0"
-
-rollup@^2.26.11:
-  version "2.26.11"
-  resolved "https://registry.npm.taobao.org/rollup/download/rollup-2.26.11.tgz?cache=0&sync_timestamp=1599542640482&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frollup%2Fdownload%2Frollup-2.26.11.tgz#4fc31de9c7b83d50916fc8395f8c3d24730cdaae"
-  integrity sha1-T8Md6ce4PVCRb8g5X4w9JHMM2q4=
-  optionalDependencies:
-    fsevents "~2.1.2"
 
 rst-selector-parser@^2.2.3:
   version "2.2.3"

@@ -1,3 +1,5 @@
+#!/usr/bin/evn node
+
 /**
  * 批量转less脚本
  */
