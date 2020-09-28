@@ -7,6 +7,7 @@
  * @upgradeDesc
  */
 import { h, FunctionalComponent, JSX } from 'preact'
+import { Link } from 'preact-router'
 import * as Style from './index.less'
 
 const ComponentView: FunctionalComponent = (): JSX.Element => (
@@ -64,9 +65,9 @@ const ComponentView: FunctionalComponent = (): JSX.Element => (
       <h2>交互组件</h2>
       <p>交互组件在一个webview中只会出现唯一个，在上一个实例未被销毁时，创建第二个实例会直接销毁第一个。</p>
       <ul>
-        <li>
+        <Link href="/components/dialog">
           对话框 Dialog
-        </li>
+        </Link>
         <li>
           提示框 Toast
         </li>

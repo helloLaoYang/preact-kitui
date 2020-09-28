@@ -41,6 +41,10 @@ module.exports = {
         "import/extensions": "off",
         "react/no-array-index-key": ["error"],
         "react/no-unknown-property": ["error", {}],
+        "no-useless-constructor": "off",
+        "class-methods-use-this": "off",
+        "space-before-function-paren": ["error", "always"],
+        "@typescript-eslint/explicit-function-return-type": "off",
         "react/jsx-wrap-multilines": ["error", {
             "declaration": "parens-new-line",
             "assignment": "parens-new-line",
@@ -69,13 +73,5 @@ module.exports = {
         pragma: "h",
         version: "latest",
         },
-    },
-    overrides: [
-        {
-        files: ["*.js"],
-        rules: {
-            "@typescript-eslint/explicit-function-return-type": "off",
-        },
-        },
-    ],
+    }
 }

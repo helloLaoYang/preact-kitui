@@ -29,27 +29,27 @@ const InstallationView: FunctionalComponent = () => (
       <h3>使用示例</h3>
       <article>
         { `
-          import { h, render } from 'preact'
-          import { Button } from 'preact-kitui'
-          import 'preact-kitui/components/style.css'
+import { h, render } from 'preact'
+import { Button } from 'preact-kitui'
+import 'preact-kitui/components/style.css'
 
-          render(
-            <Button>按钮</Button>,
-            document.getElementById('app')
-          )
+render(
+  <Button>按钮</Button>,
+  document.getElementById('app')
+)
         ` }
       </article>
 
       <h3>按需加载示例</h3>
       <article>
         { `
-          import { h, render } from 'preact'
-          import Button from 'preact-kitui/components/Button'
+import { h, render } from 'preact'
+import Button from 'preact-kitui/components/Button'
 
-          render(
-            <Button>按钮</Button>,
-            document.getElementById('app')
-          )
+render(
+  <Button>按钮</Button>,
+  document.getElementById('app')
+)
         ` }
       </article>
     </section>

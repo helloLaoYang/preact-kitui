@@ -6,6 +6,7 @@ import './App.less'
 import Home from '@/routes/home'
 import Installation from '@/routes/installation'
 import Components from './routes/components'
+import Dialog from './routes/dialog'
 
 const App: FunctionalComponent = () => (
   <div id="app">
@@ -19,7 +20,10 @@ const App: FunctionalComponent = () => (
       />
       <Components
         path="/components"
-      ></Components>
+      />
+      <Dialog
+        path="/components/dialog"
+      />
     </Router>
   </div>
 )
