@@ -1,0 +1,117 @@
+.kit-dialog__transparent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.kit-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  overflow: hidden;
+  z-index: 1001;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fff;
+  transform: translate3d(-50%, -50%, 0);
+}
+.kit-dialog__hd {
+  padding: 20px 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.kit-dialog__bd {
+  position: relative;
+}
+.kit-dialog__bd::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  overflow: hidden;
+  background-color: #eee;
+  transform: scaleY(0.5) translateZ(0);
+}
+.kit-dialog__title {
+  overflow: hidden;
+  font-size: 17px;
+  color: #000;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.kit-dialog__content {
+  margin-top: 8px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #999;
+  line-height: 18px;
+}
+.kit-dialog__content--align-left {
+  text-align: left;
+}
+.kit-dialog__content--align-center {
+  text-align: center;
+}
+.kit-dialog__content--align-right {
+  text-align: right;
+}
+.kit-dialog__button-group {
+  display: flex;
+}
+.kit-dialog__button-group .kit-dialog__button::after {
+  display: none;
+}
+.kit-dialog__button {
+  position: relative;
+  flex: 1;
+  padding: 10px;
+  overflow: hidden;
+  font-size: 17px;
+  color: #333;
+  line-height: 24px;
+  text-align: center;
+}
+.kit-dialog__button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 1px;
+  overflow: hidden;
+  background-color: #eee;
+  transform: scaleX(0.5) translateZ(0);
+}
+.kit-dialog__button:first-child::before {
+  display: none;
+}
+.kit-dialog__button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  overflow: hidden;
+  background-color: #eee;
+  transform: scaleY(0.5) translateZ(0);
+}
+.kit-dialog__button--type-confirm {
+  color: #FF9600;
+}
+.kit-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  z-index: 1001;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+.kit-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  z-index: 1001;
+}
+/*# sourceMappingURL=index.css.map */
