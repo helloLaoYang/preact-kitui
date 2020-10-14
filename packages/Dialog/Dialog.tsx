@@ -161,27 +161,29 @@ class DialogComponent extends Component<DialogComponentProps> {
   }
 }
 
-let instance: Element | undefined
+export default (() => {
+  let instance: Element | undefined
 
-const removeInstance = () => {
-  if (instance) {
-    document.body.removeChild(instance)
-    instance = undefined
+  const removeInstance = () => {
+    if (instance) {
+      document.body.removeChild(instance)
+      instance = undefined
+    }
   }
-}
 
-const Dialog = (options: DialogOptions) => {
-  instance = document.createElement('div')
-  mount(
-    <DialogComponent
-      { ...options }
-      onClosed={ removeInstance }
-    />, instance,
-  )
+  const Dialog = (options: DialogOptions) => {
+    instance = document.createElement('div')
+    mount(
+      <DialogComponent
+        { ...options }
+        onClosed={ removeInstance }
+      />, instance,
+    )
 
-  document.body.appendChild(instance)
-}
+    document.body.appendChild(instance)
+  }
 
-Dialog.destory = removeInstance
+  Dialog.destory = removeInstance
 
-export default Dialog
+  return Dialog
+})()
